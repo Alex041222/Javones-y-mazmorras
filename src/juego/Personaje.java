@@ -16,4 +16,14 @@ public class Personaje {
     public void mostrarInfo () {
     	System.out.println("Nombre: " + nombre + "Nivel: " + nivel +"Puntos de vida: "+ puntosVida);
     }
+    public void bajarVida(int vida) {
+    	this.puntosVida = this.puntosVida - vida;
+    	
+    }
+    public Inventario getInventario() {
+        return inventario;
+    }
+    public  void agregarEquipamiento(Equipamiento equipamiento) {
+    	
+    }
 }
