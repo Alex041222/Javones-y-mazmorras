@@ -13,7 +13,7 @@ public class Guerrero extends Personaje {
 	
 	 public void proteger(Personaje compañero) {
 		
-		 if(protegiendo = false) {
+		 if(protegiendo == true) {
 			 System.out.println("Ya estas proteegiendo a alguien no puedes proteger a otra persona hasta que dejes de protejer a la persona que estas proteguiendo ahora");
 		 }
 		 else {
@@ -25,7 +25,7 @@ public class Guerrero extends Personaje {
 	 }
 		 
 	 public void dejarDeProteger() {
-		 if (protegiendo = true) {
+		 if (protegiendo == true) {
 			 this.protegiendo = false;
 			 System.out.println("ya no proteges a: " +this.compañeroProtegido);
 		 }
@@ -46,7 +46,7 @@ public class Guerrero extends Personaje {
 	}
 	 
 	 public String estaProtegiendo() {
-		 if(protegiendo = true) {
+		 if(protegiendo == true) {
 			return "Estas protegiendo a: " + this.compañeroProtegido; 
 		 }
 		 else {

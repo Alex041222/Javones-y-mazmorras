@@ -9,12 +9,20 @@ public class Mago extends Personaje {
 		this.mana = mana;
 	}
 	public void lanzarHechizo (int costoMana){
-		this.mana = this.mana - costoMana;
+		if(this.mana > costoMana) {
+			this.mana = this.mana - costoMana;
+			System.out.println("Has lanzado un echizo i as gastado " + costoMana + " de Mana");
+		}
+		else {
+			System.out.println("No tienes suficente mana");
+		}
 	}
+	
 	public void recargarMana (int cantidad){
 		this.mana = this.mana + cantidad;
+		System.out.println("Has recuperado " + cantidad + " de Mana");
 	}
-	public int getMana() {
-		return mana;
+	public String getMana() {
+		return "Te queda: " + mana + " de Mana";
 	}
 }

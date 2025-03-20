@@ -12,7 +12,7 @@ public class Inventario {
 	
 	public void mostrarInventario() {
 		for (Equipamiento e : equipamiento) {
-			System.out.println("Nombre: " + e.getNombre() + ", Tipo: " + e.getTipo());
+			System.out.println( "Nombre: " + e.getNombre() + ", Tipo: " + e.getTipo());
 		}
 	}
 		
