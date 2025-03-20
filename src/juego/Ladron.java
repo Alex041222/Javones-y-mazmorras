@@ -28,7 +28,7 @@ public class Ladron extends Personaje{
 			return "Eres invisible";
 		}
 		else {
-			return "Eres invisible";
+			return "No eres invisible";
 		}
 	}
 }
